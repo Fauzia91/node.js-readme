@@ -31,12 +31,12 @@ const questions = [{
 },{
     type: "input",
     name: "usage",
-    message: "What is the purpose of the project?"
+    message: "What is the purpose of this project?"
 },{
     type: "list",
     name: "license",
     choices: ["cc","osl-3.0","unlicenses"],
-    message: "Choose your license?"
+    message: "Which license would you like to use?"
 },{
     type: "input",
     name: "contribution",
@@ -44,7 +44,7 @@ const questions = [{
 },{
     type: "input",
     name: "test",
-    message: "How do i run tests?"
+    message: "How do I run tests?"
 },{
     type: "input",
     name: "email",
@@ -52,7 +52,7 @@ const questions = [{
 },{
     type: "input",
     name: "github",
-    message: "What is your github?"
+    message: "What is your Github?"
 }];
 
 // TODO: Create a function to write README file
@@ -100,18 +100,18 @@ ${answers.usage}
 
 ${answers.contribution}
 
-    ## Test
+## Test
 
-    ${answers.test}
+${answers.test}
     
-    ## License
+## License
     
-    ${answers.license} 
+${answers.license} 
 
-    ## Questions
-    [${answers.github}](http://www.github.com/${answers.github})
+## Questions
+[${answers.github}](http://www.github.com/${answers.github})
 
-    [${answers.email}](${answers.email})
+[${answers.email}](${answers.email})
 
     
     `;
